@@ -19,12 +19,152 @@
   </header>
 
   <main>
-    <article>
-      <canvas id="webgl-scene">
-        Your browser does not support HTML5.
-      </canvas>
-    </article>
-    <aside></aside>
+    <!--Icon 1-->
+    <svg width="100" height="100" style="background:#222;" fill="transparent">
+      <circle cx="50" cy="50" r="4" fill="pink" stroke="pink">
+        <animate
+          attributeName="r",
+          from="4",
+          to="30",
+          begin="0s",
+          dur="2s",
+          repeatCount="indefinite"
+        />
+        <animateMotion
+          path="M-60,-70 C-60,-70 -45,-10 0,0",
+          begin="0s",
+          dur="2s",
+          repeatCount="indefinite"
+        />
+      </circle>
+    </svg>
+
+    <!--Icon 2-->
+    <svg width="100" height="100" style="background:beige;" fill="transparent">
+      <rect x="20" y="20" width="60" height="60" stroke="salmon" fill="salmon">
+        <animateTransform
+          attributeName="transform",
+          begin="0s",
+          dur="6s",
+          type="rotate",
+          from="0 50 50",
+          to="-360 50 50",
+          repeatCount="indefinite"
+        />
+      </rect>
+      <rect x="30" y="30" width="40" height="40" stroke="maroon" fill="maroon">
+        <animateTransform
+          attributeName="transform",
+          begin="0s",
+          dur="4s",
+          type="rotate",
+          from="0 50 50",
+          to="360 50 50",
+          repeatCount="indefinite"
+        />
+      </rect>
+      <rect x="40" y="40" width="20" height="20" stroke="black" fill="black">
+        <animateTransform
+          attributeName="transform",
+          begin="0s",
+          dur="2s",
+          type="rotate",
+          from="0 50 50",
+          to="-360 50 50",
+          repeatCount="indefinite"
+        />
+      </rect>
+    </svg>
+
+    <!--Icon 3-->
+    <svg width="100" height="100" style="background:lightblue;" fill="transparent">
+      <rect x="5" y="5" width="10" height="10" stroke="green" fill="green">
+        <animateMotion
+          path="M5,5 C25,5 50,5 75,5 C75,5 45,45 5,75 C25,75 50,75 75,75",
+          begin="0s",
+          dur="1.5s",
+          repeatCount="indefinite"
+        />
+      </rect>
+    </svg>
+
+    <!--Icon 4-->
+    <svg width="100" height="100" style="background:slategray" fill="transparent">
+      <circle cx="50" cy="50" r="0" fill="red" stroke="red">
+        <animate id="red"
+          attributeName="r",
+          from="0",
+          to="300",
+          begin="0s",
+          dur="6s"
+        />
+      </circle>
+      <circle cx="50" cy="50" r="0" fill="orange" stroke="orange">
+        <animate id="orange"
+          attributeName="r",
+          from="0",
+          to="300",
+          begin="red.end-4s",
+          dur="6s"
+        />
+      </circle>
+      <circle cx="50" cy="50" r="0" fill="yellow" stroke="yellow">
+        <animate id="yellow"
+          attributeName="r",
+          from="0",
+          to="300",
+          begin="orange.end-4s",
+          dur="6s"
+        />
+      </circle>
+      <circle cx="50" cy="50" r="0" fill="green" stroke="green">
+        <animate id="green"
+          attributeName="r",
+          from="0",
+          to="300",
+          begin="yellow.end-4s",
+          dur="6s"
+        />
+      </circle>
+      <circle cx="50" cy="50" r="0" fill="blue" stroke="blue">
+        <animate id="blue"
+          attributeName="r",
+          from="0",
+          to="300",
+          begin="green.end-4s",
+          dur="6s"
+        />
+      </circle>
+      <circle cx="50" cy="50" r="0" fill="purple" stroke="purple">
+        <animate id="purple"
+          attributeName="r",
+          from="0",
+          to="300",
+          begin="blue.end-4s",
+          dur="6s"
+        />
+      </circle>
+    </svg>
+
+    <!--Icon 5-->
+    <svg width="100" height="100" style="background:lightgreen" fill="transparent">
+      <rect x="0" y="0" width="25" height="150" stroke="green" fill="green">
+        <animateMotion
+          path="M0,0 C0,0 25,0 75,0 C75,0 25,0 0,0",
+          begin="0s",
+          dur="2.82s",
+          repeatCount="indefinite"
+        />
+      </rect>
+      <rect x="0" y="0" width="150" height="25" stroke="green" fill="green">
+        <animateMotion
+          path="M0,0 C0,0 0,25 0,75 C0,75 0,25 0,0",
+          begin="0s",
+          dur="3.14s",
+          repeatCount="indefinite"
+        />
+      </rect>
+    </svg>
   </main>
 
   <footer>
