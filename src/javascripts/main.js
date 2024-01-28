@@ -28,6 +28,8 @@ let svg1Circle = svg1.append('circle')
 function animateSvg1Circle()
 {
     svg1Circle
+        .transition()
+        .duration(2000)
         .attr('r', 4)
         .transition()
         .duration(2000)
